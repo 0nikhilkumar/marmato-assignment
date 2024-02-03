@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
   --Button: #3a4980;
   --Pale-orange: hsl(25, 100%, 94%);
@@ -12,7 +12,7 @@
 }
 /* Default styles */
 * {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Inter', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -90,7 +90,7 @@ main {
   input[type="radio"]:checked + label span {
     transform: scale(1.25);
   }
-  input[type="radio"]:checked + label .brown {
+  input[type="radio"]:checked + label .yellow {
     border: 2px solid #ceae85;
   }
   input[type="radio"]:checked + label .green {
@@ -120,18 +120,18 @@ main {
     height: 100%;
     transition: transform 0.2s ease-in-out;
   }
-  label span.brown {
-    background: #ecdecc;
+  label span.yellow {
+    background: #ECDECC;
   }
   label span.green {
-    background: #bbd278;
+    background: #BBD278;
   }
   label span.blue {
-    background: #bbc1f8;
+    background: #BBC1F8;
   }
 
   label span.pink {
-    background: #ffd3f8;
+    background: #FFD3F8;
   }
 }
 
