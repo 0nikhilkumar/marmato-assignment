@@ -34,18 +34,22 @@ function addItem() {
   }
 }
 
+let orignalPrice, givenPrice, discount;
+
 async function fetchApi() {
   const res = await fetch(
     `https://cdn.shopify.com/s/files/1/0564/3685/0790/files/singleProduct.json?v=1701948448`
   );
   const data = await res.json();
-  console.log(data.product);
+
   for (i = 0; i < data.product.images.length; i++) {
     image.src = data.product.images[i].src;
   }
+
   for (i = 0; i < data.product.options[1].length; i++) {
     sizes.innerText = data.product.options[1].values[i];
   }
+
   title.innerText = data.product.title;
   oldPrice.innerText = data.product.compare_at_price;
   para.innerText = data.product.description
@@ -53,6 +57,10 @@ async function fetchApi() {
     .replace("</p>", "");
   price.innerText = data.product.price;
   vendor.innerText = data.product.vendor;
+
+  orignalPrice = data.product.price;
+  givenPrice = data.product.compare_at_price;
+  discount = ((orignalPrice - givenPrice) / 100) * 100;
 }
 
 fetchApi();
