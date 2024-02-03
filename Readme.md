@@ -7,7 +7,7 @@
 
 # script.js
 
-`This file contain the plus minus the quantity functionality of this website and change the images, if anyone is selected.`
+`This file contain the plus minus the quantity functionality of this website and change the images, if anyone is selected. And When You increase quantity 1 then add to cart button is work otherwise it won't.`
 
 # images folder
 
@@ -17,4 +17,4 @@
 
 ### 1. Git Clone
 ### 2. Start index.html with Live Server
-### 3. 
+### 3. [Live Here](https://0nikhilkumar.github.io/marmato-assignment/)
